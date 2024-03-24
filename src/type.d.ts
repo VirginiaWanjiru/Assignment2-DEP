@@ -1,0 +1,5 @@
+ type NameProp={
+    name:string;
+};
+
+
