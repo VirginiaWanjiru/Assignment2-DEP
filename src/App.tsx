@@ -1,20 +1,20 @@
+// App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ComponentC from './components/ComponentC';
-import Parent from './components/Parent';
+import CounterDisplay from './components/CounterDisplay';
+import CounterButton from './components/CounterButton';
 
+import CounterContext from './components/CounterContext';
 
-
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <Parent/>
-
-    </>
-
-
+    <CounterProvider>
+      <div>
+        <h1>Counter App</h1>
+        <CounterDisplay />
+        <CounterButton />
+      </div>
+    </CounterProvider>
   );
-}
+};
 
 export default App;
